@@ -1,9 +1,13 @@
+/* ====== GLOBAL CSS ====== */
+
 :root{
     --main-hue: 200;
     /* --secondary-hue: 0; */
     --bg-color: hsla(var(--main-hue), 8%, 92%, 1);
     --nv-color: hsla(210, 26%, 93%, 1);
-    --logo-color: #ffc107;
+    --logo-color: hsl(45, 100%, 51%);
+    --blue-color: hsla(200, 100%, 37%, 1);
+    --red-color: hsla(0, 63%, 61%, 1);
 }
 
 *{
@@ -19,7 +23,9 @@ html{
 body{
     background-color: var(--bg-color);
 }
+/* ====== END GLOBAL CSS ====== */
 
+/* ====== HEADER ====== */
 .brand{
     text-transform: uppercase;
     max-width: 10vw;
@@ -68,11 +74,11 @@ body{
 }
 
 .nav-a2-li:hover{
-    border-bottom: 5px solid hsla(0, 63%, 61%, 1);
+    border-bottom: 5px solid var(--red-color);
 }
 
 .nav-a3-li:hover{
-    border-bottom: 5px solid hsla(200, 100%, 37%, 1);
+    border-bottom: 5px solid var(--blue-color);
 }
 
 .nav-log-li,
@@ -86,15 +92,19 @@ body{
 .nav-sign-li:hover{
     border-radius: 50%;
     border-bottom: 5px solid var(--logo-color);
-    border-inline-start: 5px solid hsla(0, 63%, 61%, 1);
+    border-inline-start: 5px solid var(--red-color);
     color: hsl(216, 20%, 95%);
     max-width: fit-content;
-    /* background-color: hsla(0, 63%, 61%, 1); */
-    /* border-bottom: 5px solid hsla(0, 63%, 61%, 1); */
-    /* border-inline-start: 5px solid linear-gradient(to bottom, hsla(200, 100%, 37%, 1),var(--logo-color));
-    border-bottom: 5px solid linear-gradient(to end, var(--logo-color),hsla(0, 63%, 61%, 1)); */
-    /* border-image-source: linear-gradient(to end, var(--logo-color), hsla(0, 63%, 61%, 1), hsla(200, 100%, 37%, 1) ); */
+    /* background-color: var(--red-color); */
+    /* border-bottom: 5px solid var(--red-color); */
+    /* border-inline-start: 5px solid linear-gradient(to bottom, var(--blue-color),var(--logo-color));
+    border-bottom: 5px solid linear-gradient(to end, var(--logo-color),var(--red-color)); */
+    /* border-image-source: linear-gradient(to end, var(--logo-color), var(--red-color), var(--blue-color) ); */
 }
+
+/* ====== END HEADER ====== */
+
+/* ====== SLIDER ====== */
 
 .slider{
     margin: auto;
@@ -109,9 +119,8 @@ body{
 
 .img-dv-slider img{
     /* display: inline-block; */
-    /* width: 10%;
-    height: 10%; */
-    /* border: 2px solid red; */
+    width: 10%;
+    height: 10%;
 }
 
 /* .slided-img{
@@ -119,6 +128,63 @@ body{
     max-width: inherit;
     max-height: inherit;
 } */
+
+/* .card{
+    width: 22vw;
+    border-radius: 10px;
+}
+
+.cacd-img-top{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card .org-brand{
+    max-width: 6vw;
+    max-height: 10vw;
+    border-radius: 7px;
+
+    box-shadow: 0 0 #0000, 
+                0 0 #0000, 
+                0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.card-body .left-info{
+    margin-block-start: 1px;
+    margin-inline-start: -19px;
+}
+
+.card-body .org-name,
+.card-body .org-city{
+    // font-size: clamp(10px, 0.1rem + 2vw, 0.5rem); //
+    font-weight: 700;
+}
+
+.card-body .org-name{
+    text-transform: uppercase;
+    color: var(--red-color);
+    font-size: 1.1vw;
+}
+
+.card-body .org-city{
+    text-transform: capitalize;
+    color: var(--blue-color);
+    font-size: 0.9vw;
+}
+
+.svg{
+    width: fit-content;
+    height: 4vh;
+}
+
+.left-info img{
+    min-width: ;
+} */
+
+/* ====== END SLIDER ====== */
+
+/* ====== PARTNERS ====== */
 
 .patners-sec{
     margin: auto;
@@ -139,3 +205,6 @@ body{
     width: 9vw;
     height: 16vh;
 }
+
+/* ====== END PARTNERS ====== */
+
