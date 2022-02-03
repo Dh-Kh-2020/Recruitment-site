@@ -276,3 +276,33 @@ a{
 /* ############################# START DASHBOARD ################################### */
 
 /* ############################# END DASHBOARD ########################################### */
+
+/* ############################# START JOBS ################################### */
+
+.in-jobs-banner{
+    position: absolute;
+    top: 40%;
+    left: 38%;
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+    /* color: var(--bg-color); */
+    text-transform: uppercase;
+}
+
+.filt-frm-cont{
+    position: absolute;
+    top: 37vh;
+    left: 31%;
+    width: 37vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.filt-frm-cont input{
+    width: 100%;
+    opacity: 70%;
+}
+
+/* ############################# END JOBS ########################################### */
+
