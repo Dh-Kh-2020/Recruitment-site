@@ -190,7 +190,7 @@ a{
 
 .crd-bd{
     /* height: 100vh; */
-    height: 88vh;
+    /* height: 88vh; */
     /* position: relative; */
 }
 
@@ -293,16 +293,37 @@ a{
 .filt-frm-cont{
     position: absolute;
     top: 37vh;
-    left: 31%;
-    width: 37vw;
+    /* left: 31%; */
+    left: 10%;
+    width: 77vw;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
 }
 
-.filt-frm-cont input{
-    width: 100%;
+.filt-frm-cont select{
+    width: 50%;
     opacity: 70%;
+    margin: 0 2vw;
 }
 
 /* ############################# END JOBS ########################################### */
+
+/* ############################# START ABOUT ########################################### */
+.about{
+    background-image: url(../imgs/general/s-l500.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+/* .about-h1-spn{
+    color: var(--yellow-color);
+} */
+.about-h1-spn::first-letter{
+    color: var(--yellow-color);
+}
+/* ############################# END ABOUT ########################################### */
+
+/* ############################# RESPONSIVE #################################### */
 
